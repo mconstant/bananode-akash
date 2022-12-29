@@ -3,11 +3,11 @@ version: "2.0"
 
 services:
   banano:
-    image: xmconstantx/configurable-bananode
+    image: xmconstantx/configurable-bananode:stable
     env:
       - CONFIG_NODE_WEBSOCKET_ENABLE=true
       - CONFIG_NODE_RPC_ENABLE=true
-      - CONFIG_SNAPSHOT_URL=https://ledgerfiles.banano.cc/rocksdb-banano-2022-07-16.tgz
+      - CONFIG_SNAPSHOT_URL=https://ledgerfiles.moonano.net/files/rocksdb-2022-12-24.tar.gz
       - CONFIG_RPC_ENABLE_CONTROL=false
       - CONFIG_NODE_ROCKSDB_ENABLE=true
     expose:
